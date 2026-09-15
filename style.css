@@ -125,7 +125,8 @@ body {
 
 /* تصميم الكاردين جنب بعض في الديسكتوب */
 .badges {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* تقسيم العرض لعمودين متساويين */
   gap: 8px;
   width: 100%;
 }
@@ -145,6 +146,9 @@ body {
   white-space: nowrap;
 }
 
+.badge:nth-child(3) {
+  grid-column: span 2;
+}
 .card-expanded-content {
   margin-top: 12px;
   padding-top: 12px;
