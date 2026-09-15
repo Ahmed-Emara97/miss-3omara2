@@ -586,7 +586,7 @@ body {
 
   .profile-card {
     cursor: pointer;
-    padding: 35px 20px !important; /* زودنا المسافة الداخلية فوق وتحت وجنب عشان الكارت يكبر وياخد ارتفاع مريح زي الريفرنس */
+    padding: 65px 20px !important; /* زودنا المسافة الداخلية فوق وتحت وجنب عشان الكارت يكبر وياخد ارتفاع مريح زي الريفرنس */
     height: auto !important;
     min-height: unset !important;
     overflow: visible;
