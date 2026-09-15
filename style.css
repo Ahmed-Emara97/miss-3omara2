@@ -125,7 +125,7 @@ body {
   background: var(--tag-bg);
   border: 1px solid var(--card-border);
   color: var(--text-muted);
-  padding: 8px 6px;
+  padding: 8px 4px;
   font-size: 0.65rem;
   border-radius: var(--radius-sm);
   text-align: center;
@@ -133,6 +133,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
 }
 
 .card-expanded-content {
@@ -585,7 +586,7 @@ body {
 
   .profile-card {
     cursor: pointer;
-    padding: 16px;
+    padding: 35px 20px !important; /* زودنا المسافة الداخلية فوق وتحت وجنب عشان الكارت يكبر وياخد ارتفاع مريح زي الريفرنس */
     height: auto !important;
     min-height: unset !important;
     overflow: visible;
@@ -606,7 +607,7 @@ body {
   }
 
   /* إرجاع البادجز تحت بعضها في الموبايل عشان تاخد راحتها */
- .badges {
+  .badges {
     flex-direction: row !important; /* إجبارهم يكونوا جنب بعض في الموبايل */
     gap: 8px;
     width: 100%;
