@@ -15,6 +15,15 @@
   --transition: all 0.25s ease-in-out;
 }
 
+/* p, 
+.bio-text, 
+.section-card p, 
+.timeline-content p, 
+.list-item p {
+  text-align: justify !important;
+  text-justify: inter-word;
+} */
+
 * {
   margin: 0;
   padding: 0;
@@ -645,6 +654,7 @@ body {
     cursor: default;
     background: var(--bg-color);
     padding: 24px 16px;
+    align-items: flex-start !important;
   }
 
   .profile-card.expanded .close-btn {
@@ -661,8 +671,40 @@ body {
 
   .profile-card.expanded .card-main {
     flex-direction: column;
-    text-align: center;
-    margin-top: 20px;
+    align-items: flex-start; /* محاذاة جهة اليسار */
+    text-align: left;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .profile-card.expanded .avatar-wrapper {
+    width: 130px;
+    height: 140px;
+    border-radius: 18px;
+  }
+
+  .profile-card.expanded .info-header {
+    text-align: left;
+    width: 100%;
+  }
+
+  .profile-card.expanded .info-header h1 {
+    font-size: 1.5rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  .profile-card.expanded .badges {
+    flex-direction: row !important;
+    justify-content: flex-start;
+    gap: 8px;
+    width: auto;
+  }
+
+  .profile-card.expanded .badge {
+    flex: initial;
+    padding: 6px 12px;
+    font-size: 0.72rem;
   }
 
   .profile-card.expanded .avatar-wrapper {
