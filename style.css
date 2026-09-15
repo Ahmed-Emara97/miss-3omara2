@@ -586,22 +586,25 @@ body {
 
   .profile-card {
     cursor: pointer;
-    padding: 65px 20px !important; /* زودنا المسافة الداخلية فوق وتحت وجنب عشان الكارت يكبر وياخد ارتفاع مريح زي الريفرنس */
+    padding: 16px !important; /* بادينج عادي وصغير */
+    min-height: 190px !important;
     height: auto !important;
-    min-height: unset !important;
     overflow: visible;
+    align-items: center;
   }
 
   .card-main {
+    display: flex;
     flex-direction: row;
     align-items: center;
     text-align: left;
     gap: 16px;
+    width: 100%; /* تمديد الحاوية بالكامل */
   }
 
   .avatar-wrapper {
     width: 100px;
-    height: 100px;
+    height: 150px;
     border-radius: 16px;
     flex-shrink: 0;
   }
@@ -611,12 +614,14 @@ body {
     flex-direction: row !important; /* إجبارهم يكونوا جنب بعض في الموبايل */
     gap: 8px;
     width: 100%;
+    width: 100%; /* فرش البادجات لآخر الخط */
   }
 
   .badge {
     flex: 1; /* بيخلي كل كارد ياخد نص المساحة بالتساوي */
     font-size: 0.62rem; /* تصغير الخط حاجات بسيطة عشان الكلام يكفي في العرض الصغير */
     padding: 6px 4px;
+    white-space: nowrap;
     text-align: center;
   }
 
