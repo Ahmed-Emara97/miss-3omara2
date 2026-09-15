@@ -606,14 +606,17 @@ body {
   }
 
   /* إرجاع البادجز تحت بعضها في الموبايل عشان تاخد راحتها */
-  .badges {
-    flex-direction: column;
-    gap: 6px;
+ .badges {
+    flex-direction: row !important; /* إجبارهم يكونوا جنب بعض في الموبايل */
+    gap: 8px;
+    width: 100%;
   }
 
   .badge {
-    font-size: 0.72rem;
-    padding: 6px 10px;
+    flex: 1; /* بيخلي كل كارد ياخد نص المساحة بالتساوي */
+    font-size: 0.62rem; /* تصغير الخط حاجات بسيطة عشان الكلام يكفي في العرض الصغير */
+    padding: 6px 4px;
+    text-align: center;
   }
 
   /* إخفاء تفاصيل التواصل افتراضياً على الموبايل لتظهر عند الضغط */
