@@ -316,6 +316,8 @@ body {
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.8;
+  text-align: justify; /* محاذاة السطور من الجانبين بالتساوي */
+  text-justify: inter-word; /* ضبط المسافات بين الكلمات لتبدو طبيعية */
 }
 
 .stats-grid {
